@@ -17,8 +17,5 @@ app.use('/api/auth/', require('./routes/authRoutes'));
 
 app.use(HandleErrors);
 
-process.env.NODE_ENV === 'production'
-
-
 let port = process.env.PORT || 3000;
 app.listen(port, console.log(`Serve is up and running! at ${port}`))
